@@ -33,4 +33,19 @@ class Img{
        image(this.greengirl,childrenX+155,childrenY,childrenXsize,childrenYsize);
        image(this.redgirl,  childrenX+310,childrenY,childrenXsize,childrenYsize);
       }
+      void boyeat(){
+        image(this.boyopen,20,435,250,250);
+      }
+      void ggirleat(){
+        image(this.greengirlopen,childrenX+155,childrenY,childrenXsize,childrenYsize);
+      }
+      void rgirleat(){
+        image(this.redgirlopen,childrenX+310,childrenY,childrenXsize,childrenYsize);
+      }
+      void startshow(){
+       image(this.startimage,0,0);
+      }
+      void endshow(){
+        image(this.endimage,0,0);
+      }
 }

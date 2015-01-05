@@ -2,22 +2,30 @@ class Dessert{
   int type;
   float x,y;
   int some_properties_you_can_implement;  
-  float speed=3;
+  float speed;
+  float r;
+ 
   
-  Dessert(float x, float y,int type){
+  Dessert(float x, float y,int type,float speed, float r){
     this.x=x;
     this.y=y;
     this.type=type;
+    this.speed=speed;
+    this.r=r;
   }
+  
   void move(){
-    this.y=y+speed;
+    this.y=y+this.speed;
+
     
    if(this.y>=640-childrenYsize){
       this.y = dessertY;
-      speed=speed+0.5;
-      dessert.type=(int) random(3);
+      this.speed+=this.r;
+      this.type=(int) random(3);
    }
   }
+  
+ 
   void show(Img img){
        
        switch(type){

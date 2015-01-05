@@ -11,7 +11,7 @@ int dessertY = 100;
 int childrenXsize=250;
 int childrenYsize=250;
 int cakenum;
-int life;
+int lifeCount;
 
 int game_state ;
 final int GAME_INITIAL = 1;
@@ -33,7 +33,7 @@ void draw(){
   switch(game_state){
    case GAME_INITIAL:
    img.startshow();  
-   life = 3;
+   lifeCount = 3;
    break;
    
    case GAME_RUN:
@@ -56,11 +56,12 @@ void draw(){
 }
 
 void life(){
-   int []life = new int[3];
-   for (int n = 0; n < 3; n++ ) {
-   life[n] =n;
-   image(img.heart,400+50*n,60);
-   }
+   if(lifeCount==3){
+   image(img.heart,400+50*3,60);}
+   if(lifeCount==2){
+   image(img.heart,400+50*2,60);}
+   if(lifeCount==1){
+   image(img.heart,400+50*1,60);}
 }
 void count(){
   fill(104,37,138);

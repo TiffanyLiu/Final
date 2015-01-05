@@ -13,11 +13,11 @@ class Img{
       PImage ccake;
       PImage scake;
       PImage donet;
-       PImage startimage;
+      PImage startimage;
       PImage endimage;
       
       Img(){
-      this.endimage   = loadImage("data/END.png");
+        this.endimage   = loadImage("data/END.png");
         this.startimage = loadImage("data/START.png");
         this.background = loadImage("data/background.png") ;
         this.boy        = loadImage("data/boy.png"); 
@@ -28,6 +28,9 @@ class Img{
         this.ccake      = loadImage("data/ccake.png");
         this.scake      = loadImage("data/scake.png");
         this.donet      = loadImage("data/donet.png");
+        this.boyopen    = loadImage("data/boy mouthopen.png");
+        this.greengirlopen    = loadImage("data/ggirlopen.png");
+        this.redgirlopen      = loadImage("data/rgirlopen.png");
       }
       
       void show(){

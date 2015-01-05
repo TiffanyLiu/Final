@@ -38,7 +38,7 @@ void draw(){
    dessert.show(img);
    dessert.move();
    life();
-  
+   count();
    break;
    
    case GAME_LOSE :
@@ -73,7 +73,11 @@ void keyPressed() {
 }
 
    
-
+void count(){
+  fill(104,37,138);
+  text("1000",80,85);
+  textSize(30);
+}
  
   
   

@@ -13,8 +13,12 @@ class Img{
       PImage ccake;
       PImage scake;
       PImage donet;
+       PImage startimage;
+      PImage endimage;
       
       Img(){
+      this.endimage   = loadImage("data/END.png");
+        this.startimage = loadImage("data/START.png");
         this.background = loadImage("data/background.png") ;
         this.boy        = loadImage("data/boy.png"); 
         this.greengirl  = loadImage("data/ggirl.png");

@@ -46,6 +46,7 @@ void draw(){
   dessert1.move(); 
   dessert2.show(img);
   dessert2.move(); 
+  count();
   break;
    
    case GAME_LOSE :
@@ -61,7 +62,11 @@ void life(){
    image(img.heart,400+50*n,60);
    }
 }
-
+void count(){
+  fill(104,37,138);
+  text("1000",80,85);
+  textSize(30);
+}
    
 
 void keyPressed() {
@@ -80,7 +85,6 @@ void keyPressed() {
   }
 }
  
-  
   
   
 

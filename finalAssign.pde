@@ -18,12 +18,26 @@ void setup(){
 
 void draw(){
 
-  img.show();
-  life();
-
-  img.show();
-  dessert.show(img);
-  dessert.move(); 
+void draw(){
+  switch(game_state){
+   case GAME_INITIAL:
+   img.startshow();  
+   life = 3;
+   break;
+   
+   case GAME_RUN:
+   img.show();
+   dessert.show(img);
+   dessert.move();
+   life();
+  
+   break;
+   
+   case GAME_LOSE :
+   img.endshow();
+   break;
+  }
+}
 }
 
 void life(){
